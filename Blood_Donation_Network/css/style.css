@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #b30000;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 32px;
+    color: #b30000;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #800000;
+}
+#home {
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+}
+
+#home h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#home p {
+    color: #555;
+    margin-bottom: 30px;
+}
+#how-it-works {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#how-it-works h2 {
+    color: #b30000;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.steps div {
+    width: 250px;
+    padding: 25px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.steps h3 {
+    color: #b30000;
+}
+
+.steps p {
+    color: #555;
+}
+#find-donor {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#find-donor h2 {
+    color: #b30000;
+    font-size: 30px;
+}
+
+#find-donor form {
+    margin-top: 30px;
+}
+
+#find-donor label {
+    margin: 10px;
+    font-weight: bold;
+}
+
+#find-donor select,
+#find-donor input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#register-donor {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#register-donor h2 {
+    color: #b30000;
+    font-size: 30px;
+}
+
+#register-donor form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#register-donor input,
+#register-donor select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#emergency-request {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#emergency-request h2 {
+    color: #b30000;
+    font-size: 30px;
+}
+
+#emergency-request form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#emergency-request input,
+#emergency-request select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#login {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#login h2 {
+    color: #b30000;
+    font-size: 30px;
+}
+
+#login form {
+    max-width: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#login input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+footer {
+    background-color: #b30000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps div {
+        width: 80%;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+#emergency-request h2 {
+    color: #b30000;
+}
+
+#emergency-request button {
+    font-weight: bold;
+}
+#stats {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#stats h2 {
+    color: #b30000;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.stats-container div {
+    width: 200px;
+    padding: 25px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.stats-container h3 {
+    color: #b30000;
+    font-size: 30px;
+    margin: 0;
+}
+
+.stats-container p {
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#compatibility {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+#compatibility h2 {
+    color: #b30000;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.compatibility-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.compatibility-info div {
+    width: 220px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.compatibility-info h3 {
+    color: #b30000;
+    font-size: 28px;
+}
+
+.compatibility-info p {
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .compatibility-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}

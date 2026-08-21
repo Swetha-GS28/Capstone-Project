@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Network</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blood Donation Network</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#find-donor">Find Donor</a>
+            <a href="#register-donor">Register as Donor</a>
+            <a href="#emergency-request">Blood Request</a>
+            <a href="#login">Login</a>
+        </nav>
+    </header>
+    <main>
+    <section id="home">
+        <h2>Welcome to Blood Donation Network</h2>
+        <p>Connecting blood donors with people in need.</p>
+
+        <button>Find a Donor</button>
+        <button>Register as a Donor</button>
+    </section>
+    
+    <section id="how-it-works">
+    <h2>How It Works</h2>
+
+    <div class="steps">
+        <div>
+            <h3>1. Register</h3>
+            <p>Register as a blood donor or create a blood request.</p>
+        </div>
+
+        <div>
+            <h3>2. Find a Match</h3>
+            <p>Search for compatible blood donors based on blood group and location.</p>
+        </div>
+
+        <div>
+            <h3>3. Save a Life</h3>
+            <p>Connect with the donor and help someone in need.</p>
+        </div>
+    </div>
+    <section>
+        <section id="stats">
+    <h2>Our Impact</h2>
+
+    <div class="stats-container">
+        <div>
+            <h3>150+</h3>
+            <p>Registered Donors</p>
+        </div>
+
+        <div>
+            <h3>80+</h3>
+            <p>Blood Requests</p>
+        </div>
+
+        <div>
+            <h3>60+</h3>
+            <p>Successful Matches</p>
+        </div>
+    </div>
+</section>
+<section id="compatibility">
+    <h2>Blood Group Compatibility</h2>
+
+    <p>Check which blood groups can donate to a particular blood group.</p>
+
+    <div class="compatibility-info">
+        <div>
+            <h3>O−</h3>
+            <p>Can donate to all blood groups.</p>
+        </div>
+
+        <div>
+            <h3>O+</h3>
+            <p>Can donate to A+, B+, AB+ and O+.</p>
+        </div>
+
+        <div>
+            <h3>AB+</h3>
+            <p>Can receive blood from all blood groups.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="find-donor">
+    <h2>Find a Blood Donor</h2>
+
+    <p>Search for available donors based on blood group and location.</p>
+
+    <form>
+        <label for="blood-group">Blood Group:</label>
+        <select id="blood-group">
+            <option value="">Select Blood Group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter your location">
+
+        <button type="button"
+        id="search-Donor-btn">Search Donor</button>
+        <div id="donor-results"></div>
+    </form>
+</section>
+<section id="register-donor">
+    <h2>Register as a Blood Donor</h2>
+
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="donor-blood-group">Blood Group:</label>
+        <select id="donor-blood-group">
+            <option value="">Select Blood Group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+
+        <label for="donor-location">Location:</label>
+        <input type="text" id="donor-location" placeholder="Enter your location">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number">
+
+        <button type="button" id="register-donor-btn">Register as Donor</button>
+        <div id="registration-result"></div>
+    </form>
+</section>
+
+<section id="emergency-request">
+    <h2>Emergency Blood Request</h2>
+
+    <p>Submit an emergency request when blood is urgently needed.</p>
+
+    <form>
+        <label for="patient-name">Patient Name:</label>
+        <input type="text" id="patient-name" placeholder="Enter patient name">
+
+        <label for="required-blood-group">Blood Group:</label>
+        <select id="required-blood-group">
+            <option value="">Select Blood Group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+
+        <label for="units">Units Required:</label>
+        <input type="number" id="units" min="1" placeholder="Number of units">
+
+        <label for="hospital">Hospital:</label>
+        <input type="text" id="hospital" placeholder="Hospital name">
+
+        <label for="request-location">Location:</label>
+        <input type="text" id="request-location" placeholder="Hospital location">
+
+        <button type="button" id="emergency-request-btn">Submit Emergency Request</button>
+        <div id="emergency-result"></div>
+    </form>
+</section>
+
+<section id="login">
+    <h2>Login</h2>
+
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+
+        <button type="button" id="login-btn">Login</button>
+    </form>
+
+    <p>Don't have an account? Register as a donor.</p>
+</section>
+</main>
+
+<footer>
+    <p>© 2026 Blood Donation Network</p>
+    <p>Every donation can save a life.</p>
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
